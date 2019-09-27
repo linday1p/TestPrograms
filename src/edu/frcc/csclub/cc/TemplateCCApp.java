@@ -24,12 +24,22 @@ public class TemplateCCApp extends CCApp {
 		
 		xPoints = new int[NUM_POINTS];
 		yPoints = new int[NUM_POINTS];
+		
+		for (int i = 0; i < NUM_POINTS; ++i) {
+			xPoints[i] = getRandom().nextInt(WIDTH);
+			yPoints[i] = getRandom().nextInt(HEIGHT);
+		}
 
 	}
 
 	@Override
 	public void update() {
 		// TODO Update your application here.
+
+		for (int i = 0; i < NUM_POINTS; ++i) {
+			xPoints[i] += getRandom().nextInt(5) - 2;
+			yPoints[i] += getRandom().nextInt(5) - 2;
+		}
 
 	}
 
