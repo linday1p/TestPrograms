@@ -15,6 +15,8 @@ public class TemplateCCApp extends CCApp {
 	@Override
 	public void begin() {
 		// TODO Initialize your application here.
+		getGfx().setColor(Color.blue);
+		getGfx().fillRect(0, 0, WIDTH, HEIGHT);
 
 	}
 
@@ -28,8 +30,8 @@ public class TemplateCCApp extends CCApp {
 	public void paint() {
 		// TODO Draw your application here.
 		// e.g. 
-		getGfx().setColor(Color.blue);
-		getGfx().fillRect(0, 0, WIDTH, HEIGHT);
+		//getGfx().setColor(Color.blue);
+		//getGfx().fillRect(0, 0, WIDTH, HEIGHT);
 		
 		int x = getRandom().nextInt(WIDTH);
 		int y = getRandom().nextInt(HEIGHT);
